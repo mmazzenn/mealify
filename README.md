@@ -3,7 +3,7 @@
 Experience a unique browsing journey in the culinary world with a restaurant template crafted using cutting-edge HTML and CSS technologies. The template boasts a beautiful and efficient design, merging user-friendliness with design elegance. Dark mode is incorporated to enhance user experience in low-light conditions.
 
 ## Key Features:
-###1. Simple and Attractive Design:
+### 1. Simple and Attractive Design:
 Present an interactively simple and beautiful user interface with an uncomplicated design.
 
 ### 2. Dark Mode:

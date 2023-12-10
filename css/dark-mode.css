@@ -1,0 +1,51 @@
+/* Start Global */
+
+:root:has(.mode-in:checked) {
+  --main-color-hue: 35;
+  --main-color-saturation: 72%;
+  --main-color-lightness: 49%;
+
+  --light-hue: 0;
+  --light-saturation: 0%;
+  --light-lightness: 9%;
+
+  --default-color: #FFF;
+  --tertiary-color: #9f9f9f;
+
+  --bg-gray: #252525;
+}
+
+body:has(.mode-in:checked) {
+  background-color: #202020;
+}
+
+/* End Global */
+
+/* Start Navbar */
+
+body:has(.mode-in:checked) .mode .dark {
+  display: none;
+}
+
+body:has(.mode-in:checked) .mode .light {
+  display: block;
+}
+
+body:not(body:has(:target)):has(.mode-in:checked) nav li a[href="#home"],
+body:has(.home:target):has(.mode-in:checked) nav li a[href="#home"],
+body:has(.chefs:target):has(.mode-in:checked) nav li a[href="#chefs"],
+body:has(.gallery:target):has(.mode-in:checked) nav li a[href="#gallery"],
+body:has(.contact:target):has(.mode-in:checked) nav li a[href="#contact"],
+body:has(.mode-in:checked) nav ul li a:hover {
+  color: hsl(var(--light-hue), var(--light-saturation), calc(var(--light-lightness) + 90%));
+}
+
+/* End Navbar */
+
+/* Start Chefs */
+
+body:has(.mode-in:checked) .chefs .cards .card picture::after {
+  background-image: url('../assets/team-shape-dark.svg');
+}
+
+/* End Chefs */

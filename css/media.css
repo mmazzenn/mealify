@@ -1,0 +1,384 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* Start Global */
+
+@media screen and (max-width: 400px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* End Global */
+
+/* Start Navbar */
+
+@media screen and (max-width: 1200px) {
+  nav {
+    height: 100%;
+    background-color: hsl(var(--light-hue), var(--light-saturation), var(--light-lightness), 0.7);
+  }
+
+  nav .mode {
+    margin-left: auto;
+    margin-right: 1.25rem;
+  }
+
+  nav .nav-toggle {
+    display: block;
+  }
+
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 21.875rem;
+    height: 100%;
+    background-color: #FFF;
+    -webkit-transition: -webkit-transform var(--main-time);
+    transition: -webkit-transform var(--main-time);
+    -o-transition: transform var(--main-time);
+    transition: transform var(--main-time);
+    transition: transform var(--main-time), -webkit-transform var(--main-time);
+  }
+
+  nav ul li {
+    padding: 0.9375rem 0;
+  }
+
+  nav ul li:hover a {
+    color: #000 !important;
+  }
+
+  nav ul li a::before {
+    display: none;
+  }
+
+  nav ul .close-icon {
+    display: block;
+    padding: 0.9375rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
+
+  nav ul .close-icon i {
+    font-size: 1.5625rem;
+    color: var(--tertiary-color);
+    -webkit-transition: color var(--main-time);
+    -o-transition: color var(--main-time);
+    transition: color var(--main-time);
+  }
+
+  nav ul .close-icon:hover i {
+    color: #000;
+  }
+
+  body:not(body:has(.nav-links:target)) .nav-links {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+  body:not(body:has(.nav-links:target)) nav {
+    height: auto;
+    background-color: hsl(var(--light-hue), var(--light-saturation), var(--light-lightness));
+  }
+
+  body:has(.nav-links:target) .nav-links {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav ul {
+    width: 13.5rem;
+  }
+}
+
+/* End Navbar */
+
+/* Start Home */
+
+@media screen and (min-width: 1200px) {
+  .home {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .home .container {
+    padding-top: 2.7813rem;
+    padding-bottom: 2.7813rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    gap: 3.125rem;
+  }
+
+  .home .container>* {
+    width: 100%;
+    text-align: center;
+  }
+
+  .home .btns-container {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home .btns-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .home .btns-container .btn {
+    margin-right: 0 !important;
+  }
+}
+
+/* End Home */
+
+/* Start Chefs */
+
+@media screen and (max-width: 992px) {
+  .chefs .cards {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .chefs .cards .card {
+    width: calc((100% - 1.875rem) / 2);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chefs .cards .card {
+    width: 100%
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .chefs .cards .card picture::after {
+    height: 2.5rem;
+  }
+}
+
+/* End Chefs */
+
+/* Start Gallery */
+
+@media screen and (max-width: 1400px) {
+  .gallery .photos {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .gallery .photos {
+    height: 845px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .gallery .photos {
+    height: 1405px;
+  }
+
+  .gallery .photos picture {
+    width: calc((100% - 1.875rem) / 2);
+  }
+
+  .gallery .photos .pizza {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .gallery .photos .burger {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .gallery .photos .pizza-slices {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  .gallery .photos .omelette {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+
+  .gallery .photos .steak {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+  }
+
+  .gallery .photos .chicken {
+    -webkit-box-ordinal-group: 7;
+    -ms-flex-order: 6;
+    order: 6;
+  }
+
+  .gallery .photos .kebab {
+    -webkit-box-ordinal-group: 8;
+    -ms-flex-order: 7;
+    order: 7;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery .photos {
+    height: auto;
+  }
+
+  .gallery .photos picture {
+    width: 100%;
+  }
+}
+
+/* End Gallery */
+
+/* Start Contact */
+
+@media screen and (max-width: 992px) {
+
+  .contact form input[name="name"],
+  .contact form input[name="email"] {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .contact .contact-info>div {
+    width: 100%;
+  }
+}
+
+/* End Contact */
+
+/* Start Footer */
+
+@media screen and (max-width: 1200px) {
+
+  .footer .about-brand,
+  .footer .contact-info {
+    min-width: calc((100% - var(--gap)) / 2);
+  }
+
+  .footer .about-brand {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .footer .contact-info {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .footer .subscription {
+    min-width: 100%;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .footer .about-brand,
+  .footer .contact-info {
+    min-width: 100%
+  }
+
+  .footer .contact-info {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer .subscription .subscription-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  .footer .subscription .subscription-form>* {
+    min-width: 100% !important;
+  }
+}
+
+/* End Footer */
